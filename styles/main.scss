@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Config
+@import './config/fonts';
+@import './config/tailwind';
+
+* {
+    font-family: 'Raleway';
+}
