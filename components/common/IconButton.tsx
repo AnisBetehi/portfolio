@@ -1,7 +1,9 @@
 import React from 'react'
 
 type IProps = {
-    Icon: React.FC;
+    Icon: React.ComponentType<{
+      className?: string;
+    }>;
     text: string;
     [x: string]: any
 }
