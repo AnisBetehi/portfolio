@@ -1,9 +1,5 @@
 import { Metadata } from 'next'
 import '../styles/main.scss'
-import Header from '../components/layout/Header'
-import Footer from '../components/layout/Footer'
-import Sidebar from '../components/common/Sidebar'
-import SidebarContext from '../context/SidebarContext'
 
 export const metadata: Metadata = {
   title: 'Anis Betehi',
@@ -38,13 +34,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className='min-h-screen flex flex-col'>
-        <SidebarContext>
-          <Header />
+      <body className='min-h-screen flex flex-col bg-neutral-950 text-gray-300'>
           {children}
-          <Footer />
-          <Sidebar />
-        </SidebarContext>
       </body>
     </html>
   )

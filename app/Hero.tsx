@@ -1,33 +1,49 @@
-import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 import Container from '../components/common/Container'
+import { GoDotFill } from "react-icons/go";
+import { socials } from '../data/socials';
+import IconButton from '../components/common/IconButton';
+import Link from 'next/link';
 
 const Hero = () => {
 
   return (
-    <Container>
-        <main className='flex justify-center'>
-                <motion.div            
-                    className='mt-20 md:mt-28 flex flex-col lg:flex-row items-center gap-3'
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                >
-                    <div className='text-center lg:text-left'>
-                        <h1 className='text-3xl sm:text-5xl font-black'>HELLO, I&apos;M <span className='text-amber-700'>ANIS BETEHI</span></h1>
-                        <h3 className='text-md sm:text-lg mt-2 font-medium'>A FULL STACK DEVELOPER BASED IN ALGERIA</h3>
-                    </div>
-
-                    <div className='w-full aspect-square md:w-[600px] md:h-[450px] relative'>
-                        <Image 
-                            src='/assets/images/illustration.jpg'
-                            alt='woman'
-                            layout='fill'
-                            objectFit='contain'
+    <Container className='section'>
+        <main>
+            <motion.div            
+                className='mt-6 sm:mt-0 flex flex-col lg:flex-row gap-14'
+            >
+                <div className='lg:mt-20'>
+                    <div className='flex items-center gap-1 mb-3'>
+                        <GoDotFill 
+                            className='text-green-400'
                         />
+                        Online.
+                    </div>
+                    <h1 className='text-3xl sm:text-4xl font-bold font-primary'>Hey, I&apos;m <span>Anis</span></h1>
+                    <h2 className='text-[1.6rem] sm:text-4xl font-primary font-black text-gradient mt-1'>FULL STACK DEVELOPER.</h2>
+
+                    <div className='flex gap-4 flex-wrap my-6'>
+                        {socials.map((social, index) => (
+                            <Link
+                                key={index}
+                                href={social.link}
+                                target='_blank'
+                            >
+                                <IconButton 
+                                    Icon={social.icon}
+                                    text={social.title}
+                                />
+                            </Link>
+                        ))}
                     </div>
 
-                </motion.div>
+                    <p className='text-lg text-zinc-500'>
+                    Hi, my name is Anis Betehi, an experienced Full Stack Developer from Algeria, with <span className='font-semibold text-zinc-300'>2 years of experience</span> in React, Next, Node.js and SQL. Ready to create innovative web solutions!
+                    </p>
+                </div>
+            </motion.div>
         </main>
     </Container>
   )
