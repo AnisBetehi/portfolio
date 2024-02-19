@@ -9,7 +9,7 @@ const TimelineEntry = ({ job, }: IProps) => {
 
   return (
     <div 
-        className='timeline-entry-container cursor-pointer' 
+        className='timeline-entry-container' 
     >
         <div className='timeline-entry bg-zinc-800'>
 

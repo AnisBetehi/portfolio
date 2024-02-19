@@ -10,15 +10,13 @@ import { SiTypescript } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
+import { FaDocker } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
 
 export const techStack = [
     {
         name: 'TypeScript',
         icon: SiTypescript
-    },
-    {
-        name: 'Sass',
-        icon: FaSass
     },
     {
         name: 'React',
@@ -31,6 +29,10 @@ export const techStack = [
     {
         name: 'Redux',
         icon: SiRedux
+    },
+    {
+        name: 'Sass',
+        icon: FaSass
     },
     {
         name: 'Tailwind',
@@ -59,5 +61,13 @@ export const techStack = [
     {
         name: 'MySQL',
         icon: TbBrandMysql
+    },
+    {
+        name: 'Firebase',
+        icon: IoLogoFirebase
+    },
+    {
+        name: 'Docker',
+        icon: FaDocker
     },
 ]

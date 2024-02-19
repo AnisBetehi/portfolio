@@ -1,5 +1,3 @@
-'use client'
-
 import Projects from "../components/Home/Projects"
 import Tech from "../components/Home/Tech"
 import Timeline from "../components/Home/Timeline"
@@ -10,8 +8,8 @@ export default function Home() {
     <>
       <Hero />
       <Timeline />
-      {/* <Projects /> */}
       <Tech />
+      <Projects />
     </>
   )
 }

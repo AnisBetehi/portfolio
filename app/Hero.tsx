@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import Container from '../components/common/Container'
 import { GoDotFill } from "react-icons/go";
 import { socials } from '../data/socials';
@@ -11,7 +10,7 @@ const Hero = () => {
   return (
     <Container className='section'>
         <main>
-            <motion.div            
+            <div            
                 className='mt-6 sm:mt-0 flex flex-col lg:flex-row gap-14'
             >
                 <div className='lg:mt-20'>
@@ -43,7 +42,7 @@ const Hero = () => {
                     Hi, my name is Anis Betehi, an experienced Full Stack Developer from Algeria, with <span className='font-semibold text-zinc-200'>2 years of experience</span> in React, Next, Node.js and SQL. Ready to create innovative web solutions!
                     </p>
                 </div>
-            </motion.div>
+            </div>
         </main>
     </Container>
   )

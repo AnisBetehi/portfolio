@@ -127,8 +127,11 @@ body {
 @layer components {
 
     .section {
-      @apply  border-b-[1px] border-zinc-500 py-10 border-solid
-      ;
+      @apply py-10;
+    }
+
+    .section:not(:last-of-type) {
+        @apply border-b-[1px] border-zinc-500 border-solid;
     }
 
     .section-title {
