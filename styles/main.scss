@@ -72,19 +72,24 @@ body {
     display: flex;
     flex-direction: column;
 
-    > div {
+    .timeline-entry-container {
         position: relative;
         width: 100%;
+        padding-inline: 1rem;
 
-        &:not(:last-child)::before {
-            content: '';
-            display: block;
-            height: 100%;
-            width: 1.5px;
-            background-color: white;
-            position: absolute;
-            top: 0;
-            left: 0;
+        &:not(:last-child) {
+            padding-bottom: 3rem;
+
+            &::before {
+                content: '';
+                display: block;
+                height: 100%;
+                width: 1.5px;
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
 
         &::after {
@@ -99,32 +104,20 @@ body {
         }
 
         @media (min-width: 600px) {
-            width: 50%;
 
             &:nth-child(odd) {
                 justify-content: flex-end;
-                left: 50%;
                 
                 &::after {
                     left: -5px;
                 }
-
-            }
-    
-            &:nth-child(even) {
-                text-align: right;
-                
-                &::after {
-                    left: unset;
-                    right: -5px;
-                }
-
-                &::before {
-                    left: unset;
-                    right: 0;
-                }
             }
 
+        }
+
+        .timeline-entry {
+            padding: 1rem;
+            border-radius: .7rem;
         }
 
     }
@@ -141,4 +134,19 @@ body {
     .section-title {
         @apply  text-2xl font-semibold;
       }
+}
+
+.accordion {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .3s ease;
+
+    &.is-expanded {
+        grid-template-rows: 1fr;
+    }
+
+    > * {
+        grid-row: 1/2;
+        overflow: hidden;
+    }
 }

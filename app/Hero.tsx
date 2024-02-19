@@ -39,8 +39,8 @@ const Hero = () => {
                         ))}
                     </div>
 
-                    <p className='text-lg text-zinc-500'>
-                    Hi, my name is Anis Betehi, an experienced Full Stack Developer from Algeria, with <span className='font-semibold text-zinc-300'>2 years of experience</span> in React, Next, Node.js and SQL. Ready to create innovative web solutions!
+                    <p className='text-lg text-zinc-400'>
+                    Hi, my name is Anis Betehi, an experienced Full Stack Developer from Algeria, with <span className='font-semibold text-zinc-200'>2 years of experience</span> in React, Next, Node.js and SQL. Ready to create innovative web solutions!
                     </p>
                 </div>
             </motion.div>

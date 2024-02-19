@@ -9,6 +9,7 @@ import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
 
 export const techStack = [
     {
@@ -28,7 +29,7 @@ export const techStack = [
         icon: SiNextdotjs
     },
     {
-        name: 'Redux / Toolkit',
+        name: 'Redux',
         icon: SiRedux
     },
     {
@@ -46,6 +47,10 @@ export const techStack = [
     {
         name: 'Express',
         icon: SiExpress
+    },
+    {
+        name: 'MongoDB',
+        icon: DiMongodb
     },
     {
         name: 'Postgres',
