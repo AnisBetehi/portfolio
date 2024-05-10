@@ -12,7 +12,7 @@ const Tech = () => {
                 {techStack.map((tech, index) => (
                     <div 
                         key={index}
-                        className='w-full bg-zinc-800 hover:bg-zinc-600 duration-200 cursor-pointer text-white p-10 rounded-lg flex flex-col items-center gap-3 text-center'
+                        className='w-full bg-zinc-800 text-white p-10 rounded-lg flex flex-col items-center gap-3 text-center'
                     >
                         <tech.icon className='text-4xl'/>
                         <span className='text-md'>{tech.name}</span>

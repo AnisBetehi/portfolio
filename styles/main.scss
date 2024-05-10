@@ -77,19 +77,19 @@ body {
         width: 100%;
         padding-inline: 1rem;
 
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 1.5px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
         &:not(:last-child) {
             padding-bottom: 3rem;
-
-            &::before {
-                content: '';
-                display: block;
-                height: 100%;
-                width: 1.5px;
-                background-color: white;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
         }
 
         &::after {
@@ -100,19 +100,7 @@ body {
             background-color: white;
             position: absolute;
             top: 0;
-            left: -5px;
-        }
-
-        @media (min-width: 600px) {
-
-            &:nth-child(odd) {
-                justify-content: flex-end;
-                
-                &::after {
-                    left: -5px;
-                }
-            }
-
+            left: -4px;
         }
 
         .timeline-entry {

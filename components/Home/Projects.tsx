@@ -15,13 +15,13 @@ const Projects = () => {
               {projects.map((project, index) => (
                 <div 
                   key={index}
-                  className='bg-zinc-800 p-4 rounded-lg w-full'
+                  className='bg-zinc-800 p-4 rounded-lg w-full cursor-pointer hover:brightness-75 duration-200'
                 >
                     <div className='flex justify-between items-center'>
                       <span className='inline-block text-xl font-semibold'>{project.name}</span>
                       <div className='flex gap-3'>
 
-                        <Link href={project.repo} target='_blank' title='Repository'>
+                        <Link href={project.repo} target='_blank' title='Code'>
                           <FaGithub className='text-xl' />
                         </Link>
 
