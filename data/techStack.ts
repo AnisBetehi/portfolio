@@ -23,7 +23,7 @@ export const techStack = [
         icon: FaReact
     },
     {
-        name: 'Next',
+        name: 'Next.js',
         icon: SiNextdotjs
     },
     {
@@ -47,7 +47,7 @@ export const techStack = [
         icon: FaNodeJs
     },
     {
-        name: 'Express',
+        name: 'Express.js',
         icon: SiExpress
     },
     {
@@ -55,7 +55,7 @@ export const techStack = [
         icon: DiMongodb
     },
     {
-        name: 'Postgres',
+        name: 'PostgreSQL',
         icon: SiPostgresql
     },
     {
