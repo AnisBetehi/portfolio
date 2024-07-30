@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "20.10.0",
-    "@types/react": "18.2.38"
+    "@types/react": "18.2.38",
+    "cross-env": "^7.0.3"
   }
 }

@@ -7,7 +7,8 @@ const nextConfig = {
                 hostname: "**",
               },
         ]
-    }
+    },
+    productionBrowserSourceMaps: true
 }
 
 module.exports = nextConfig

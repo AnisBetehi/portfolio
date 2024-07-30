@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   'UI/UX'
   ],
   icons: {
-    icon: '/favicon.svg',
+    icon: '/logo.png',
   },
 }
 
